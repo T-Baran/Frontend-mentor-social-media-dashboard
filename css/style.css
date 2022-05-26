@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --bg: hsl(0, 0%, 100%);
+  --bg-top: hsl(225, 100%, 98%);
+  --card-bg: hsl(227, 47%, 96%);
+  --text: hsl(230, 17%, 14%);
+  --text-secondary: hsl(228, 12%, 44%);
+}
+
+[data-theme="dark"] {
+  --bg: hsl(230, 17%, 14%);
+  --bg-t: hsl(232, 19%, 15%);
+  --card-bg: hsl(228, 28%, 20%);
+  --text: hsl(0, 0%, 100%);
+  --text-secondary: hsl(228, 34%, 66%);
+}
+
+.theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4vh;
+}
+
+.theme-switch-wrapper em {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 30px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 22px;
+  left: 5.5px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 22px;
+}
+
+input:checked + .slider {
+  background: -webkit-gradient(linear, left top, right top, from(#378fe6), to(#3eda82));
+  background: linear-gradient(90deg, #378fe6, #3eda82);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  color: var(--text);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+}
+
+nav {
+  width: 90vw;
+  margin-inline: auto;
+}
+
+nav h1 {
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+}
+
+nav p {
+  color: var(--text-secondary);
+}
+
+nav hr {
+  margin: 4vh auto 2vh auto;
+}
+/*# sourceMappingURL=style.css.map */
