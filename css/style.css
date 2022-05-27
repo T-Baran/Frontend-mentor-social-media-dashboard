@@ -227,4 +227,67 @@ nav hr {
 .upper-section .item4::before {
   background-color: #c4032a;
 }
+
+.lower-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 90vw;
+  margin-inline: auto;
+  gap: 15px;
+}
+
+.lower-section .item {
+  background-color: var(--card-bg);
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lower-section .item .title {
+  color: var(--text-secondary);
+  font-weight: 700;
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.lower-section .item .image {
+  width: 20px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.lower-section .item .amount {
+  font-weight: 700;
+  font-size: 2.5rem;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.lower-section .item .change {
+  margin-right: 0;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=style.css.map */
