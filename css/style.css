@@ -38,6 +38,8 @@
 .theme-switch-wrapper em {
   margin-right: 10px;
   font-size: 1rem;
+  color: var(--text-secondary);
+  font-weight: 700;
 }
 
 .theme-switch {
@@ -102,6 +104,16 @@ body {
   background-color: var(--bg);
 }
 
+.top-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30vh;
+  z-index: -5;
+  background-color: var(--bg-t);
+}
+
 nav {
   width: 90vw;
   margin-inline: auto;
@@ -114,6 +126,7 @@ nav h1 {
 
 nav p {
   color: var(--text-secondary);
+  font-weight: 700;
 }
 
 nav hr {
