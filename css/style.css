@@ -118,6 +118,9 @@ nav p {
 
 nav hr {
   margin: 4vh auto 2vh auto;
+  border: none;
+  height: 0.5px;
+  background-color: var(--text-secondary);
 }
 
 .change {
@@ -228,6 +231,12 @@ nav hr {
   background-color: #c4032a;
 }
 
+h2 {
+  color: var(--text-secondary);
+  margin: 30px auto;
+  width: 90vw;
+}
+
 .lower-section {
   display: -ms-grid;
   display: grid;
@@ -236,6 +245,7 @@ nav hr {
   width: 90vw;
   margin-inline: auto;
   gap: 15px;
+  margin-bottom: 40px;
 }
 
 .lower-section .item {
@@ -243,6 +253,7 @@ nav hr {
   padding: 20px;
   display: -ms-grid;
   display: grid;
+  border-radius: 10px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr;
@@ -274,7 +285,7 @@ nav hr {
 
 .lower-section .item .amount {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2rem;
   -ms-grid-column-align: start;
       justify-self: start;
   -ms-flex-item-align: center;
