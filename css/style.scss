@@ -149,7 +149,7 @@ nav {
   width: fit-content;
   margin-inline: auto;
 
-  &::before {
+  &:before {
     position: absolute;
     left: -12px;
     bottom: 2px;
@@ -157,13 +157,13 @@ nav {
 }
 .decrease {
   color: hsl(356, 69%, 56%);
-  &::before {
+  &:before {
     content: url(/images/icon-down.svg);
   }
 }
 .increase {
   color: hsl(163, 72%, 41%);
-  &::before {
+  &:before {
     content: url(/images/icon-up.svg);
   }
 }

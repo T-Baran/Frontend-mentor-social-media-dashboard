@@ -179,7 +179,7 @@ nav hr {
   margin-inline: auto;
 }
 
-.change::before {
+.change:before {
   position: absolute;
   left: -12px;
   bottom: 2px;
@@ -189,7 +189,7 @@ nav hr {
   color: #dc414c;
 }
 
-.decrease::before {
+.decrease:before {
   content: url(/images/icon-down.svg);
 }
 
@@ -197,7 +197,7 @@ nav hr {
   color: #1db489;
 }
 
-.increase::before {
+.increase:before {
   content: url(/images/icon-up.svg);
 }
 
