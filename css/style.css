@@ -190,7 +190,11 @@ nav hr {
 }
 
 .decrease:before {
-  content: url(/images/icon-down.svg);
+  content: "";
+  background-image: url(/images/icon-down.svg);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 8px;
 }
 
 .increase {
