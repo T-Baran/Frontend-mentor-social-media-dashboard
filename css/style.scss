@@ -18,6 +18,7 @@
   --card-bg: hsl(227, 47%, 96%);
   --text: hsl(230, 17%, 14%);
   --text-secondary: hsl(228, 12%, 44%);
+  --hover-effect: brightness(0.9);
 }
 [data-theme="dark"] {
   --bg: hsl(230, 17%, 14%);
@@ -25,6 +26,7 @@
   --card-bg: hsl(228, 28%, 20%);
   --text: hsl(0, 0%, 100%);
   --text-secondary: hsl(228, 34%, 66%);
+  --hover-effect: brightness(1.2);
 }
 // ---------- DARK MODE SWITCH START---------------
 .theme-switch-wrapper {
@@ -151,6 +153,7 @@ nav {
 
   &:before {
     position: absolute;
+    z-index: 10;
     left: -12px;
     bottom: 2px;
     // width: 10px;
@@ -161,17 +164,13 @@ nav {
   color: hsl(356, 69%, 56%);
   &:before {
     content: "";
-    // content: url(/images/icon-down.svg);
-    background-image: url(/images/icon-down.svg);
-    background-repeat: no-repeat;
-    width: 10px;
-    height: 8px;
+    content: url(../images/icon-down.svg);
   }
 }
 .increase {
   color: hsl(163, 72%, 41%);
   &:before {
-    content: url(/images/icon-up.svg);
+    content: url(../images/icon-up.svg);
   }
 }
 //utility class for green and red text end
@@ -196,6 +195,11 @@ nav {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.3s;
+
+    &:hover {
+      filter: var(--hover-effect);
+    }
 
     &::before {
       content: "";
@@ -277,6 +281,11 @@ h2 {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     flex-direction: column;
+    transition: 0.3s;
+
+    &:hover {
+      filter: var(--hover-effect);
+    }
 
     .title {
       color: var(--text-secondary);

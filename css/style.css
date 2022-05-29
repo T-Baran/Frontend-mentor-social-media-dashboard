@@ -12,6 +12,7 @@
   --card-bg: hsl(227, 47%, 96%);
   --text: hsl(230, 17%, 14%);
   --text-secondary: hsl(228, 12%, 44%);
+  --hover-effect: brightness(0.9);
 }
 
 [data-theme="dark"] {
@@ -20,6 +21,7 @@
   --card-bg: hsl(228, 28%, 20%);
   --text: hsl(0, 0%, 100%);
   --text-secondary: hsl(228, 34%, 66%);
+  --hover-effect: brightness(1.2);
 }
 
 .theme-switch-wrapper {
@@ -181,6 +183,7 @@ nav hr {
 
 .change:before {
   position: absolute;
+  z-index: 10;
   left: -12px;
   bottom: 2px;
 }
@@ -191,10 +194,7 @@ nav hr {
 
 .decrease:before {
   content: "";
-  background-image: url(/images/icon-down.svg);
-  background-repeat: no-repeat;
-  width: 10px;
-  height: 8px;
+  content: url(../images/icon-down.svg);
 }
 
 .increase {
@@ -202,7 +202,7 @@ nav hr {
 }
 
 .increase:before {
-  content: url(/images/icon-up.svg);
+  content: url(../images/icon-up.svg);
 }
 
 .upper-section {
@@ -234,6 +234,13 @@ nav hr {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.upper-section .item:hover {
+  -webkit-filter: var(--hover-effect);
+          filter: var(--hover-effect);
 }
 
 .upper-section .item::before {
@@ -337,6 +344,13 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.lower-section .item:hover {
+  -webkit-filter: var(--hover-effect);
+          filter: var(--hover-effect);
 }
 
 .lower-section .item .title {
